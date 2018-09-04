@@ -1,0 +1,25 @@
+@import '../../asset/style/constant.scss';
+$header-heit:50px;
+@mixin flexSpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+@mixin flexStart{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+.header{
+    background-color: $header-bgCol;
+    height: $header-heit;
+    line-height: $header-heit;
+    @include flexSpaceBetween;
+    padding: 0 20px;
+    ul{
+        @include flexStart;
+        li{
+            padding-right: 20px;
+        }
+    }
+}

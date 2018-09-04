@@ -1,0 +1,30 @@
+@import "constant.scss";
+*{
+  font-family: "Helvetica Neue",Helvetica,Arial,microsoft yahei,simsun;
+  padding: 0;
+  margin: 0;
+  color: $text-color;
+}
+li{list-style: none}
+button,input,select{outline: none}
+
+@mixin flexSpaceBetween{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+@mixin flexStart{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+//最外层容器盒子
+.main-content{
+  @include flexStart;
+  >div:last-child{
+    width:100%;
+    margin: 20px;
+    border: 1px solid red;
+
+  }
+}
