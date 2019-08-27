@@ -12,8 +12,10 @@ class Routers extends React.Component{
         return(
             <Router> 
                 <Switch>
-                    <Route exact path="/login" component={Login}/>  
+                    <Route exact path="/" component={Login}/>  
+                    <Route exact path="/login" component={Login}/> 
                     <App>
+                       {/* <Route exact path="/" component={CtHistory}/> */}
                         {/* 历史CT查看 */}
                         <Route exact path="/ct-history" component={CtHistory}/> 
                         {/* 新建病历   */}

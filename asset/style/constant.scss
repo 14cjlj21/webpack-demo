@@ -6,3 +6,38 @@ $text-size:16px;                    //全局文本字号
 
 //header部分
 $header-bgCol:#1890ff;
+
+//2端对齐，项目之间的间隔都相等
+@mixin flexSpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+//每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。
+@mixin flexSpaceAround{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+//左对齐
+@mixin flexStart{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+//右对齐
+@mixin flexEnd{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+//居中对齐
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}

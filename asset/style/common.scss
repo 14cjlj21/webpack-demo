@@ -8,16 +8,6 @@
 li{list-style: none}
 button,input,select{outline: none}
 
-@mixin flexSpaceBetween{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
-@mixin flexStart{
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-}
 //最外层容器盒子
 .main-content{
   @include flexStart;
